@@ -5,7 +5,6 @@ const fs      = require('lowdb/adapters/FileSync');
 const adapter = new fs('db.json');
 const db      = low(adapter);
 const cors    = require('cors');
-const PORT = process.env.PORT || 3000
 
 // allow cross-origin resource sharing (CORS)
 app.use(cors());
